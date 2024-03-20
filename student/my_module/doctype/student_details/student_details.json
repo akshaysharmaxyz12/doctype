@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Format:\"{YYYY}-{MM}-{DD}-{####}\"",
+ "creation": "2024-03-19 14:14:53.891389",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "add_student_details_section",
+  "first_name",
+  "middel_name",
+  "last_name",
+  "full_name",
+  "date_of_birth",
+  "e_mail",
+  "active",
+  "column_break_injk",
+  "gender",
+  "nationality",
+  "blood_group",
+  "joining_date",
+  "primary_address",
+  "address_html",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middel_name",
+   "fieldtype": "Data",
+   "label": "Middel Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "e_mail",
+   "fieldtype": "Data",
+   "label": "E mail"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_injk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Afghan\nAlbanian\nAlgerian\nAmerican\nAndorran\nAngolan\nAnguillan\nArgentine\nArmenian\nAustralian\nAustrian\nAzerbaijani\nBahamian\nBahraini\nBangladeshi\nBarbadian\nBelarusian\nBelgian\nBelizean\nBeninese\nBermudian\nBhutanese\nBolivian\nBotswanan\nBrazilian\nBritish\nBritish Virgin Islander\nBruneian\nBulgarian\nBurkinan\nBurmese\nBurundian\nCambodian\nCameroonian\nCanadian\nCape Verdean\nCayman Islander\nCentral African\nChadian\nChilean\nChinese\nCitizen of Antigua and Barbuda\nCitizen of Bosnia and Herzegovina\nCitizen of Guinea-Bissau\nCitizen of Kiribati\nCitizen of Seychelles\nCitizen of the Dominican Republic\nCitizen of Vanuatu\nColombian\nComoran\nCongolese (Congo)\nCongolese (DRC)\nCook Islander\nCosta Rican\nCroatian\nCuban\nCymraes\nCymro\nCypriot\nCzech\nDanish\nDjiboutian\nDominican\nDutch\nEast Timorese\nEcuadorean\nEgyptian\nEmirati\nEnglish\nEquatorial Guinean\nEritrean\nEstonian\nEthiopian\nFaroese\nFijian\nFilipino\nFinnish\nFrench\nGabonese\nGambian\nGeorgian\nGerman\nGhanaian\nGibraltarian\nGreek\nGreenlandic\nGrenadian\nGuamanian\nGuatemalan\nGuinean\nGuyanese\nHaitian\nHonduran\nHong Konger\nHungarian\nIcelandic\nIndian\nIndonesian\nIranian\nIraqi\nIrish\nIsraeli\nItalian\nIvorian\nJamaican\nJapanese\nJordanian\nKazakh\nKenyan\nKittitian\nKosovan\nKuwaiti\nKyrgyz\nLao\nLatvian\nLebanese\nLiberian\nLibyan\nLiechtenstein citizen\nLithuanian\nLuxembourger\nMacanese\nMacedonian\nMalagasy\nMalawian\nMalaysian\nMaldivian\nMalian\nMaltese\nMarshallese\nMartiniquais\nMauritanian\nMauritian\nMexican\nMicronesian\nMoldovan\nMonegasque\nMongolian\nMontenegrin\nMontserratian\nMoroccan\nMosotho\nMozambican\nNamibian\nNauruan\nNepalese\nNew Zealander\nNicaraguan\nNigerian\nNigerien\nNiuean\nNorth Korean\nNorthern Irish\nNorwegian\nOmani\nPakistani\nPalauan\nPalestinian\nPanamanian\nPapua New Guinean\nParaguayan\nPeruvian\nPitcairn Islander\nPolish\nPortuguese\nPrydeinig\nPuerto Rican\nQatari\nRomanian\nRussian\nRwandan\nSalvadorean\nSammarinese\nSamoan\nSao Tomean\nSaudi Arabian\nScottish\nSenegalese\nSerbian\nSierra Leonean\nSingaporean\nSlovak\nSlovenian\nSolomon Islander\nSomali\nSouth African\nSouth Korean\nSouth Sudanese\nSpanish\nSri Lankan\nSt Helenian\nSt Lucian\nStateless\nSudanese\nSurinamese\nSwazi\nSwedish\nSwiss\nSyrian\nTaiwanese\nTajik\nTanzanian\nThai\nTogolese\nTongan\nTrinidadian\nTristanian\nTunisian\nTurkish\nTurkmen\nTurks and Caicos Islander\nTuvaluan\nUgandan\nUkrainian\nUruguayan\nUzbek\nVatican citizen\nVenezuelan\nVietnamese\nVincentian\nWallisian\nWelsh\nYemeni\nZambian\nZimbabwean"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Link",
+   "label": "Primary Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address"
+  },
+  {
+   "fieldname": "add_student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Add Student Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "student details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-19 22:09:19.269707",
+ "modified_by": "Administrator",
+ "module": "my module",
+ "name": "student details",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
