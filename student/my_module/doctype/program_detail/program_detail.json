@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Format:\"{YYYY}-{MM}-{DD}-{####}\"",
+ "creation": "2024-03-19 11:06:50.599882",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "add_program_details_section",
+  "program_name",
+  "description",
+  "start_date",
+  "end_date",
+  "duration",
+  "total_credit",
+  "status",
+  "instructor",
+  "courses",
+  "topic",
+  "participants"
+ ],
+ "fields": [
+  {
+   "fieldname": "add_program_details_section",
+   "fieldtype": "Section Break",
+   "label": "Add Program Details"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Float",
+   "label": "Total Credit"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nOngoing\nCompleted"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "label": "Instructor",
+   "options": "Employee"
+  },
+  {
+   "default": "0",
+   "fieldname": "courses",
+   "fieldtype": "Check",
+   "label": "Courses",
+   "options": "Course"
+  },
+  {
+   "fieldname": "topic",
+   "fieldtype": "Link",
+   "label": "Topic",
+   "options": "Topics Details"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Select",
+   "label": "Participants"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-19 18:03:45.430747",
+ "modified_by": "Administrator",
+ "module": "my module",
+ "name": "Program detail",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
