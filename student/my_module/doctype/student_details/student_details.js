@@ -55,7 +55,6 @@ frappe.ui.form.on('student details', {
 					"address_dict": frm.doc.primary_address
 				},
 				callback: function(r) {
-                    console.log("abbu")
 					frm.set_value("address_html", r.message);
 				}
 			});
