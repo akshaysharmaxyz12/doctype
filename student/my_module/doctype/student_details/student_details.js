@@ -9,10 +9,9 @@
 
 frappe.ui.form.on('student details', {
     refresh: function(frm) {
-        if(!frm.doc.__islocal) {
-            console.log("hellow")
-            frappe.contacts.render_address_and_contact(frm);
-        }
+        // if(!frm.doc.__islocal) {
+        //     frappe.contacts.render_address_and_contact(frm);
+        // }
         frm.set_query("Default Address", function() {
             return {
                 "filters": {
@@ -20,15 +19,7 @@ frappe.ui.form.on('student details', {
                 }
             };
         });
-    },
-    before_save: function(frm) {
-        // Check if middle name is defined before concatenating
-        let fullName = frm.doc.first_name + ' ' + (frm.doc.middle_name || '') + ' ' + frm.doc.last_name;
-        frm.doc.full_name = fullName.trim(); // Trim extra spaces
-    },
-
-    on_submit: function(frm) {
-        
+        if(frm.doc.docstatus=1){
         frm.add_custom_button(__('Create User'), function() {
             frappe.call({
                 method: 'student.my_module.doctype.student_details.student_details.create_user_from_student',
@@ -44,9 +35,29 @@ frappe.ui.form.on('student details', {
                 }
             });
         });
+    }
     },
+
+
+    
+    before_save: function(frm) {
+        // Check if middle name is defined before concatenating
+        let fullName = frm.doc.first_name + ' ' + (frm.doc.middle_name || '') + ' ' + frm.doc.last_name;
+        frm.doc.full_name = fullName.trim(); // Trim extra spaces
+    },
+
+
+
+
+
+
+
+
+
+
+
+
     primary_address: function(frm){
-        console,log("hellow")
 		if(frm.doc.primary_address){
             console.log("akshay")
 			frappe.call({
@@ -65,7 +76,6 @@ frappe.ui.form.on('student details', {
 		}
 	},
 });
-
 
 
 

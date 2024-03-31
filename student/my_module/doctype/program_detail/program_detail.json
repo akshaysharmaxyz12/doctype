@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "Format:\"{YYYY}-{MM}-{DD}-{####}\"",
+ "autoname": "Format:{YYYY}-{MM}-{DD}-{####}",
  "creation": "2024-03-19 11:06:50.599882",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -82,13 +82,14 @@
   },
   {
    "fieldname": "participants",
-   "fieldtype": "Select",
-   "label": "Participants"
+   "fieldtype": "Table",
+   "label": "Participants",
+   "options": "participants"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-19 18:03:45.430747",
+ "modified": "2024-03-31 12:58:18.848256",
  "modified_by": "Administrator",
  "module": "my module",
  "name": "Program detail",

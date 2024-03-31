@@ -6,26 +6,31 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "participant",
+  "student",
   "preview"
  ],
  "fields": [
   {
-   "fieldname": "participant",
-   "fieldtype": "Link",
-   "label": "Participant",
-   "options": "student details"
-  },
-  {
    "fieldname": "preview",
    "fieldtype": "Button",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Preview"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Student",
+   "options": "student details",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-19 17:59:52.405667",
+ "modified": "2024-03-31 13:01:32.580970",
  "modified_by": "Administrator",
  "module": "my module",
  "name": "participants",

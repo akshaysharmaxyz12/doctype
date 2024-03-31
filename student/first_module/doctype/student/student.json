@@ -45,10 +45,11 @@
    "label": "Full Name"
   },
   {
+   "default": ".YYYY.-.MM.-.DD.-",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "YYYY-MM-DATE\nYYYY-MM-DATE\nYYYY-MM-DATE",
+   "options": ".YYYY.-.MM.-.DD.-",
    "reqd": 1
   },
   {
@@ -62,7 +63,8 @@
    "fieldname": "e_mail",
    "fieldtype": "Data",
    "label": "E mail",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "gender",
@@ -86,7 +88,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 17:29:17.225160",
+ "modified": "2024-03-30 21:21:49.173685",
  "modified_by": "Administrator",
  "module": "first module",
  "name": "student",

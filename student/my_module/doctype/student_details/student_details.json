@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "Format:\"{YYYY}-{MM}-{DD}-{####}\"",
+ "autoname": "naming_series:",
  "creation": "2024-03-19 14:14:53.891389",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -21,7 +21,7 @@
   "joining_date",
   "primary_address",
   "address_html",
-  "amended_from"
+  "naming_series"
  ],
  "fields": [
   {
@@ -104,20 +104,19 @@
    "label": "Add Student Details"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "student details",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "default": ".YYYY.-.MM.-.DD.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Naming Series",
+   "options": ".YYYY.-.MM.-.DD.-",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-19 22:09:19.269707",
+ "modified": "2024-03-31 11:06:44.015961",
  "modified_by": "Administrator",
  "module": "my module",
  "name": "student details",
